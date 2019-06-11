@@ -14,12 +14,12 @@ public function testResultado(): void {
   
   guardarCookie();
   
-  $this->assertTrue(is_bool($resultado), "Llamaste a la función setcookie?");
+  $this->assertTrue(is_bool($resultado), "Tem certeza que você usou a função setcookie");
   
-  $this->assertTrue($resultado, "La función no hace lo esperado");
+  $this->assertTrue($resultado, "A função não tem o retorno esperado!");
 }
 
-public function testCookie2(): void {
+public function testResultado2(): void {
   global $testName;
   global $testValue;
   global $testExpires;
@@ -35,7 +35,7 @@ public function testCookie2(): void {
   
   guardarCookie();
   
-  $this->assertTrue(is_bool($resultado), "Llamaste a la función setcookie?");
+  $this->assertTrue(is_bool($resultado), "Tem certeza que você usou a função setcookie");
   
-  $this->assertTrue($resultado, 'La función no hace lo esperado. ¿Estas enviando el valor desde $_GET?');
+  $this->assertTrue($resultado, "A função não tem o retorno esperado! Chegou a usar $_GET?");
 }

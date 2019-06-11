@@ -8,9 +8,9 @@ public function testResultado(): void {
   $testValue = "PT-BR";
   $testExpires = 0;
   
-  guardarCookie();
+  salvarCookie();
   
-  $this->assertTrue(is_bool($resultado), "Llamaste a la función setcookie?");
+  $this->assertTrue(is_bool($resultado), "Tem certeza que usou a função setcookie? ");
   
-  $this->assertTrue($resultado, "La función no hace lo esperado");
+  $this->assertTrue($resultado, "A função não retorna o resultado esperado!");
 }

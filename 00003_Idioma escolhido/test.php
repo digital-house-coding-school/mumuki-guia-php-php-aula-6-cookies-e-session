@@ -5,7 +5,7 @@ public function testResultado(): void {
   global $resultado;
   
   $_GET = [
-    "idioma" => "ENG"
+    "idioma" => "es"
   ];
   
   $testName = "idioma";
